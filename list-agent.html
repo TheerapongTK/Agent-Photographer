@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agent-photogarpher</title>
+    <link rel="stylesheet" href="list-agent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+      src="https://kit.fontawesome.com/88dfe94bff.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+
+    <div class="topweb">
+        <div class="container">
+          <div class="top-web-left">
+            <a href="#">home</a>
+            <a href="#">About Us</a>
+            <a href="#">privacy policy</a>
+          </div>
+  
+          <div class="top-web-right">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <!-- <a href=""><i class="fab fa-pinterest"></i></a> -->
+          </div>
+        </div>
+      </div>
+  
+    <!-- Nevigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="nav_con">
+                <div class="bars" id="bars"><i class="fas fa-bars" onclick="showMenu()"></i></div>
+                <a href="#" class="logo">
+                    <img src="Logo.png" alt="">
+                </a>
+                <ul class="menu" id="Menu">
+                    <div class="times" id="times"><i class="fas fa-times" onclick="hideMenu()"></i></div>
+                    <li><a href="index-agent.html">Home</a></li>
+                    <li><a href="list-agent.html">Photographer Lists</a></li>
+                    <!-- <li><a href="#">Photographer Styles</a></li>  -->
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+                <a href="#" class="account">Sign In/Sign Up</a>
+                <!-- <a href="#" class="account"><i class="fab fa-sign in"></i></a> -->
+             </div>
+        </div>
+    </nav>
+
+<!-- ..................................................................................................... -->
+
+<!-- SUPER GRID BOX -->   
+
+    <div class="container">
+        <div class="content_box">
+            <div class="leftNav_con">
+                <div class="nav_item">
+                        <div class="style_btn_con">
+                            <button class="style_drop_btn">Photo Styles<i class="fa fa-caret-down"></i></button>
+                            <ul class="drop_con">
+                                <a href=""><li>Portraits</li></a>
+                                <a href=""><li>Fashions</li></a>
+                                <a href=""><li>Models</li></a>
+                                <a href=""><li>Products</li></a>
+                                <a href=""><li>Wedding</li></a>
+                                <a href=""><li>Streets</li></a>
+                                <a href=""><li>Food</li></a>
+                                <a href=""><li>Documentary</li></a>
+                                <a href=""><li>Drone photography</li></a>
+                                <a href=""><li>Astrophotography</li></a>
+                            </ul>
+                        </div>
+                        <div class="region_btn_con">
+                            <button class="region_drop_btn">Region<i class="fa fa-caret-down"></i></button>
+                                <ul class="drop_sup_btn">
+                                    <button class="C_drop_btn" id="sup_btn">The Central<i class="fa fa-caret-down"></i></button> 
+                                        <ul class="drop_sup_con">
+                                            <a href=""><li>Bangkok</li></a>
+                                            <a href=""><li>Kamphaeng Phet</li></a>
+                                            <a href=""><li>Chai Nat </li></a>
+                                            <a href=""><li>Nakhon Nayok</li></a>
+                                            <a href=""><li>Nakhon Pathom</li></a>
+                                            <a href=""><li>Nakhon Sawan </li></a>
+                                            <a href=""><li>Nonthaburi</li></a>
+                                            <a href=""><li>Pathum Thani</li></a>
+                                            <a href=""><li>Phra Nakhon Si Ayutthaya</li></a>
+                                            <a href=""><li>Phichit</li></a>
+                                            <a href=""><li>Phitsanulok </li></a>
+                                            <a href=""><li>Phetchabun</li></a>
+                                            <a href=""><li>Lopburi</li></a>
+                                            <a href=""><li>Samut Prakan</li></a>
+                                            <a href=""><li>Samut Songkhram</li></a>
+                                            <a href=""><li>Samut Sakhon</li></a>
+                                            <a href=""><li>Sing Bur</li></a>
+                                            <a href=""><li>Sukhothai </li></a>
+                                            <a href=""><li>Suphan Buri</li></a>
+                                            <a href=""><li>Saraburi</li></a>
+                                            <a href=""><li>Ang Thong </li></a>
+                                            <a href=""><li>Uthai Thani</li></a>
+                                            
+                                        </ul>
+                                    <button class="N_drop_btn" id="sup_btn">The North<i class="fa fa-caret-down"></i></button>
+                                        <ul class="drop_sup_con">
+                                            <a href=""><li>Chiang Mai</li></a>   
+                                            <a href=""><li>Chiang Rai</li></a>   
+                                            <a href=""><li>Lampang</li></a>   
+                                            <a href=""><li>Lamphun</li></a>   
+                                            <a href=""><li>Mae Hong Son</li></a>   
+                                            <a href=""><li>Nan</li></a>   
+                                            <a href=""><li>Phayao</li></a>   
+                                            <a href=""><li>Phrae</li></a>   
+                                            <a href=""><li>Uttaradit</li></a>   
+                                        </ul>
+                                    <button class="NE_drop_btn" id="sup_btn">The North East<i class="fa fa-caret-down"></i></button>
+                                        <ul class="drop_sup_con">
+                                            <a href=""><li>Kalasin </li></a>
+                                            <a href=""><li>Khon Kaen</li></a>
+                                            <a href=""><li>Chaiyaphum</li></a>
+                                            <a href=""><li>Nakhon Phanom</li></a>
+                                            <a href=""><li>Nakhon Ratchasima</li></a>
+                                            <a href=""><li>Bueng Kan</li></a>
+                                            <a href=""><li>Buriram</li></a>
+                                            <a href=""><li>Maha Sarakham</li></a>
+                                            <a href=""><li>Mukdahan</li></a>
+                                            <a href=""><li>Yasothon</li></a>
+                                            <a href=""><li>Roi Et</li></a>
+                                            <a href=""><li>Loei </li></a>
+                                            <a href=""><li>Sakon Nakhon</li></a>
+                                            <a href=""><li>Surin</li></a>
+                                            <a href=""><li>Sisaket</li></a>
+                                            <a href=""><li>Nong Khai</li></a>
+                                            <a href=""><li>Nong Bua Lamphu</li></a>
+                                            <a href=""><li>Udon Thani</li></a>
+                                            <a href=""><li>Ubon Ratchathani</li></a>
+                                            <a href=""><li>Amnat Charoen </li></a>
+                                        </ul>
+                                    <button class="E_drop_btn" id="sup_btn"> The East<i class="fa fa-caret-down"></i></button>
+                                        <ul class="drop_sup_con">
+                                            <a href=""><li>Chanthaburi</li></a>
+                                            <a href=""><li>Chachoengsao</li></a>
+                                            <a href=""><li>Chonburi Province</li></a>
+                                            <a href=""><li>Trat Province</li></a>
+                                            <a href=""><li>Prachinburi Province</li></a>
+                                            <a href=""><li>Rayong Province</li></a>
+                                            <a href=""><li>Sa Kaeo Province</li></a>
+                                        </ul>
+                                    <button class="W_drop_btn" id="sup_btn">The West<i class="fa fa-caret-down"></i></button>
+                                        <ul class="drop_sup_con">
+                                            <a href=""><li>Kanchanaburi</li></a>
+                                            <a href=""><li>Tak</li></a>
+                                            <a href=""><li>Prachuap Khiri Khan</li></a>
+                                            <a href=""><li>Phetchaburi</li></a>
+                                            <a href=""><li>Ratchaburi</li></a>
+                                        </ul>
+                                    <button class="S_drop_btn" id="sup_btn">The South<i class="fa fa-caret-down"></i></button>
+                                        <ul class="drop_sup_con">
+                                            <a href=""><li>Krabi </li></a>
+                                            <a href=""><li>Chumphon </li></a>
+                                            <a href=""><li>Trang </li></a>
+                                            <a href=""><li>Nakhon Si Thammarat</li></a>
+                                            <a href=""><li>Narathiwat</li></a>
+                                            <a href=""><li>Pattani</li></a>
+                                            <a href=""><li>Phang Nga</li></a>
+                                            <a href=""><li>Phatthalung</li></a>
+                                            <a href=""><li>Phuket</li></a>
+                                            <a href=""><li>Ranong </li></a>
+                                            <a href=""><li>Satun</li></a>
+                                            <a href=""><li>Songkhla</li></a>
+                                            <a href=""><li>Surat Thani </li></a>
+                                            <a href=""><li>Yala</li></a>
+                                        </ul>
+                                </ul>
+                        </div>
+                </div>      
+            </div>
+        <!-- Blog Section -->
+            <section class="blog">
+                <div class="container">
+                    <!-- <ul class="blog_title">
+                        <li class="title">Photographer</li>
+                        <li class="filter">Filter By</li>
+                    </ul> -->
+                    <div class="blog_con">
+                        <div class="blog_item">
+                            <img src="https://unsplash.com/photos/a-person-standing-on-top-of-a-mountain-at-sunset-uqAUg1zvMXQ" alt="">
+                            <div class="user_info">
+                                <h4>Photographer Name </h4>
+                                <img src="user.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsam quia esse tenetur consequuntur unde!</p>
+                            <div class="foot_blog">
+                                <a href="#">Contact to</a>
+                                <div class="foot_blog_left">
+                                    <p>150</p>
+                                    <i class="fas fa-heart"></i>
+                                    <p>32</p>
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_item">
+                            <img src="https://unsplash.com/photos/a-person-standing-on-top-of-a-mountain-at-sunset-uqAUg1zvMXQ" alt="">
+                            <div class="user_info">
+                                <h4>Photographer Name </h4>
+                                <img src="user.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsam quia esse tenetur consequuntur unde!</p>
+                            <div class="foot_blog">
+                                <a href="#">Contact to</a>
+                                <div class="foot_blog_left">
+                                    <p>150</p>
+                                    <i class="fas fa-heart"></i>
+                                    <p>32</p>
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_item">
+                            <img src="https://unsplash.com/photos/a-person-standing-on-top-of-a-mountain-at-sunset-uqAUg1zvMXQ" alt="">
+                            <div class="user_info">
+                                <h4>Photographer Name </h4>
+                                <img src="user.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsam quia esse tenetur consequuntur unde!</p>
+                            <div class="foot_blog">
+                                <a href="#">Contact to</a>
+                                <div class="foot_blog_left">
+                                    <p>150</p>
+                                    <i class="fas fa-heart"></i>
+                                    <p>32</p>
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_item">
+                            <img src="https://unsplash.com/photos/a-person-standing-on-top-of-a-mountain-at-sunset-uqAUg1zvMXQ" alt="">
+                            <div class="user_info">
+                                <h4>Photographer Name </h4>
+                                <img src="user.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsam quia esse tenetur consequuntur unde!</p>
+                            <div class="foot_blog">
+                                <a href="#">Contact to</a>
+                                <div class="foot_blog_left">
+                                    <p>150</p>
+                                    <i class="fas fa-heart"></i>
+                                    <p>32</p>
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_item">
+                            <img src="https://unsplash.com/photos/a-person-standing-on-top-of-a-mountain-at-sunset-uqAUg1zvMXQ" alt="">
+                            <div class="user_info">
+                                <h4>Photographer Name </h4>
+                                <img src="user.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsam quia esse tenetur consequuntur unde!</p>
+                            <div class="foot_blog">
+                                <a href="#">Contact to</a>
+                                <div class="foot_blog_left">
+                                    <p>150</p>
+                                    <i class="fas fa-heart"></i>
+                                    <p>32</p>
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_item">
+                            <img src="https://unsplash.com/photos/a-person-standing-on-top-of-a-mountain-at-sunset-uqAUg1zvMXQ" alt="">
+                            <div class="user_info">
+                                <h4>Photographer Name </h4>
+                                <img src="user.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsam quia esse tenetur consequuntur unde!</p>
+                            <div class="foot_blog">
+                                <a href="#">Contact to</a>
+                                <div class="foot_blog_left">
+                                    <p>150</p>
+                                    <i class="fas fa-heart"></i>
+                                    <p>32</p>
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_item">
+                            <img src="https://unsplash.com/photos/a-person-standing-on-top-of-a-mountain-at-sunset-uqAUg1zvMXQ" alt="">
+                            <div class="user_info">
+                                <h4>Photographer Name </h4>
+                                <img src="user.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsam quia esse tenetur consequuntur unde!</p>
+                            <div class="foot_blog">
+                                <a href="#">Contact to</a>
+                                <div class="foot_blog_left">
+                                    <p>150</p>
+                                    <i class="fas fa-heart"></i>
+                                    <p>32</p>
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_item">
+                            <img src="https://unsplash.com/photos/a-person-standing-on-top-of-a-mountain-at-sunset-uqAUg1zvMXQ" alt="">
+                            <div class="user_info">
+                                <h4>Photographer Name </h4>
+                                <img src="user.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsam quia esse tenetur consequuntur unde!</p>
+                            <div class="foot_blog">
+                                <a href="#">Contact to</a>
+                                <div class="foot_blog_left">
+                                    <p>150</p>
+                                    <i class="fas fa-heart"></i>
+                                    <p>32</p>
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_item">
+                            <img src="https://unsplash.com/photos/a-person-standing-on-top-of-a-mountain-at-sunset-uqAUg1zvMXQ" alt="">
+                            <div class="user_info">
+                                <h4>Photographer Name </h4>
+                                <img src="user.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsam quia esse tenetur consequuntur unde!</p>
+                            <div class="foot_blog">
+                                <a href="#">Contact to</a>
+                                <div class="foot_blog_left">
+                                    <p>150</p>
+                                    <i class="fas fa-heart"></i>
+                                    <p>32</p>
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            
+                
+            </section>
+        </div>
+    </div>
+
+
+    
+
+<!--........................................................................................................... -->
+    <!-- Footer Section -->
+    <Section class="footer">
+        <footer>
+                <div class="container">
+                    <div class="footer_con">
+                        <div class="footer_item_left">
+                            <h3>Payment Term</h3>
+                            <a href="#"><p>Credit Cards</p></a>
+                            <a href="#"><p>Cash</p></a>
+                            <a href="#"><p>Mobile Bank</p></a>
+                        </div>
+                        <div class="footer_item_mid">
+                                <h3>About Us</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, cupiditate eveniet nihil libero nemo numquam quidem inventore, reiciendis ipsam hic vel exercitationem, harum velit molestiae nobis incidunt tempora consequuntur cum.</p>
+                        </div>
+                        <div class="footer_item_right">
+                            <h3>Contact Us</h3>
+                            <a href="3"><p>Facebook</p></a>
+                            <a href="#"><p>Twitter</p></a>
+                            <a href="#"><p>RSS</p></a>
+                        <a href="#"><p>Google+</p></a> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </Section>
+
+    <script src="Script.js"></script>
+</body>
+</html>
