@@ -278,16 +278,17 @@ button:hover{
 
 /* FOOTER */
 .footer {
+    position: static;
     padding:  1rem 3rem;
     margin-top: 2rem;
     background-color: #333;
     color: #f0f0f0;
+
     
 }
 
 .footer_con {
     display: flex;
-    position: relative;
     justify-content: space-between;
 }
 
