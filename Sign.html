@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>agent-photogarpher</title>
     <link rel="stylesheet" href="Sign.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script
       src="https://kit.fontawesome.com/88dfe94bff.js"
       crossorigin="anonymous"
@@ -45,13 +47,69 @@
                     <li><a href="#">Contact Us</a></li>
                     <li><a href="#"><i class="fas fa-search"></i></a></li>
                 </ul>
-                <a href="#" class="account">Sign In/Sign Up</a>
+                <a href="Sign.html" class="account">Sign In/Up</a>
                 <!-- <a href="#" class="account"><i class="fab fa-sign in"></i></a> -->
              </div>
         </div>
     </nav>
 
 <!-- .....................................Content........................................... -->
+
+<!-- Sign In/Up -->
+    <div class="sign_container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <img src="./pic/Logo_w_nt.png" alt="">
+                <h1>Create Your Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="Name - Lastname">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <img src="./pic/Logo_b_nt.png" alt="">
+                <div class="form_content">
+                    <h1>Sign In</h1>
+                    <span>use your email account and password</span>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a href="#">Forget Your Password?</a>
+                    <span>or use your socail account</span>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <button>Sign In</button>
+                </div>
+                
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal account to use our site feature</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, To All!</h1>
+                    <p>Register with your personal social account or your information to recieve a promotion and Promotions and other benefits for our membership</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 <!-- .....................................Content........................................... -->
 
    
