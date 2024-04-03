@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 :root {
     --gray: rgb(70, 69, 69);
   }
@@ -25,65 +26,43 @@ body {
 
 /* ...................................................Content............................................ */
 
-.sign_container {
-    background-color:transparent;
-    border-radius: 20px;
+.sign_container{
+    background-color: white;
+    border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 960px;
+    width: 50vw;
     max-width: 100%;
-    min-height: 480px;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    min-height: 70vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
-.sign-in img {
-    position: absolute;
-    width: 100%;
-    height: 93%;
-    margin: 1rem auto;
-    z-index: 10;
+ 
+.sign_container img{
+    width: 50%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.sing_container .sign-in p{
-    color: white;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.3px;
-    margin: 20px 0;
-}
-.sing_container .sign-up p{
-    color: white;
+
+.sign_container p{
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
 }
 
-.sing_container .sign-in span{
-    color: white;
+.sign_container span{
     font-size: 12px;
-    z-index: 100;
-}
-.sing_container .sign-up span{
-    color: white;
-    font-size: 12px;
-    z-index: 100;
+    margin: 0.5rem 0;
 }
 
-.sign_container .sign-in a{
-    color: white;
+.sign_container a{
+    color: #333;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
-    z-index: 100;
-}
-.sign_container .sign-in a{
-    color: white;
-    font-size: 13px;
-    text-decoration: none;
-    margin: 15px 0 10px;
-    z-index: 100;
 }
 
 .sign_container button{
@@ -96,9 +75,12 @@ body {
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 0px;
     cursor: pointer;
-    z-index: 100;
+}
+
+#btn_up {
+    margin-top: 8px;
 }
 
 .sign_container button.hidden{
@@ -106,14 +88,26 @@ body {
     border-color: #fff;
 }
 
-.sign_container form{
-    background:linear-gradient(to top,white,gray);
+.sign_container .sign-in form{
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
     height: 100%;
+    border: none;
+}
+.sign_container .sign-up form{
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 40px;
+    height: 100%;
+    border: none;
 }
 
 .sign_container input{
@@ -132,6 +126,7 @@ body {
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
+    
 }
 
 .sign-in{
@@ -170,7 +165,11 @@ body {
 }
 
 .social-icons{
-    margin: 20px 0;
+    margin: 10px 0;
+}
+.sign-up .social-icons a{
+    margin: 5px 0;
+    color: white;
 }
 
 .social-icons a{
@@ -200,11 +199,14 @@ body {
     transform: translateX(-100%);
     border-radius: 0 150px 100px 0;
 }
-
+.sign_container.active {
+    background-color: black;
+    transition: all 0.6s ease-in-out;
+}
 .toggle{
-    background-color: #512da8;
+    background-color: black;
     height: 100%;
-    background: linear-gradient(to right, #5c6bc0, #512da8);
+    /* background: linear-gradient(to right, #5c6bc0, #512da8); */
     color: #fff;
     position: relative;
     left: -100%;
@@ -216,7 +218,14 @@ body {
 
 .sign_container.active .toggle{
     transform: translateX(50%);
+    background-color: white;
+    color: black;
 }
+.sign_container.active button.hidden {
+    color: black;
+    border-color:black;
+}
+
 
 .toggle-panel{
     position: absolute;
