@@ -36,7 +36,7 @@ body {
 }
 .topweb .container .top-web-left a {
     color: white;
-    margin-right: 12px;
+    margin-right: 6px;
 }
 
 .topweb .container .top-web-right a i {
@@ -73,7 +73,7 @@ nav{
     max-width: 100px;
 }
 
-a {
+.nav_con a {
     font-size: 16px;
     color: black;
     font-weight: 400;
