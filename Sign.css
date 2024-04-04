@@ -37,6 +37,7 @@ body {
     min-height: 70vh;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    
 }
  
 .sign_container img{
@@ -63,6 +64,11 @@ body {
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
+}
+
+.sign-in a:hover, .sign-up a:hover {
+    color: rebeccapurple;
+    border-bottom:1px solid #512da8 ;
 }
 
 .sign_container button{
@@ -100,7 +106,7 @@ body {
 }
 .sign_container .sign-up form{
     background-color: black;
-    color: antiquewhite;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,13 +197,14 @@ body {
     height: 100%;
     overflow: hidden;
     transition: all 0.6s ease-in-out;
-    border-radius: 150px 0 0 100px;
-    z-index: 1000;
+    border-radius: 200px 0 0 0px;
+    z-index: 100;
 }
+
 
 .sign_container.active .toggle-container{
     transform: translateX(-100%);
-    border-radius: 0 150px 100px 0;
+    border-radius: 0 0 200px 0;
 }
 .sign_container.active {
     background-color: black;
@@ -224,6 +231,7 @@ body {
 .sign_container.active button.hidden {
     color: black;
     border-color:black;
+    
 }
 
 
